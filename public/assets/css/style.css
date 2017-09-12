@@ -1,0 +1,26 @@
+body {
+  background: url('../newspaper-background.jpg') repeat;
+  background-size: 2600px;
+  font-family: 'Titan One', cursive;
+  font-size: 16px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.articleBody {
+  height: 200px;
+  font-size: 20px;
+  overflow-y: scroll;
+  line-height: 150%;
+}
+
+#nameComment{
+  font-weight: bold;
+  background: #5fd8d8;
+  color: white;
+}
+
+#read{
+  margin-left: 200px;
+}
