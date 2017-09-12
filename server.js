@@ -23,7 +23,7 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 
 //connecting to MongoDB
-mongoose.connect('mongodb://heroku_gj8pd990:9uqsp4mcatub4vcbd164khiste@ds129344.mlab.com:29344/heroku_gj8pd990');
+mongoose.connect('mongodb://heroku_2nx5gg68:o9kemv700kfvkuq94glsjg17k@ds133814.mlab.com:33814/heroku_2nx5gg68');
 
 var db = mongoose.connection;
 db.on('error', function(error) {
