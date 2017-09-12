@@ -6,8 +6,8 @@ var request = require('request');
 var cheerio = require('cheerio');
 
 //Require models
-var Comment = require('../models/Comment.js');
-var Article = require('../models/Article.js');
+var Comment = require('../models/comment.js');
+var Article = require('../models/article.js');
 
 
 router.get('/', function(req, res) {
@@ -18,10 +18,9 @@ router.get('/', function(req, res) {
 router.get('/scrape', function(req, res) {
     // First, we grab the body of the html with request
     request('http://mashable.com/tech/?utm_cid=mash-prod-nav-ch', function(error, response, html) {
-        // Then, we load that into cheerio and save it to $ for a shorthand selector
         var $ = cheerio.load(html);
         var titlesArray = [];
-        // Now, we grab every article
+
         $('article h1').each(function(i, element) {
             // Save an empty result object
             var result = {};
