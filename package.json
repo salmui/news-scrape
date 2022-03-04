@@ -30,4 +30,5 @@
   "engines": {
   "node": "6.11.1"
   }
+   "stack": "heroku-20"  
 }
